@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+    <title>Rock, paper, scissors</title>
+</head>
+<body>
+    <main>
+        <div class="welcome">
+            <h1>Hello, what is your name?</h1>
+            <input type="text" id="name">
+            <button id="btn-new">New game</button>
+            <p id="error"> </p>
+        </div>
+        <div class="game-screen">
+            <div class="player-info">
+                <h2 id="player">Player: </h2>
+                <h2 id="win">Total wins: 0</h2>
+            </div>
+            <h3 id="game-message">click icon to play</h3>
+            <div class="game-area">
+                <div class="player-area">
+                    <h2>Player</h2>
+                    <div class="select-container">
+                        <img class="player-select" id="player-rock" src="/image/rock.png" alt="rock">
+                        <img class="player-select" id="player-paper" src="/image/paper.png" alt="paper">
+                        <img class="player-select" id="player-scissors" src="/image/scissors.png" alt="scissors">
+                    </div>
+                </div>
+                <div class="computer-area">
+                    <h2>Computer</h2>
+                    <img class="computer-select" id="computer">
+                </div>
+                
+            </div>
+            
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
